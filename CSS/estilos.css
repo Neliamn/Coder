@@ -3,7 +3,7 @@ padding: 0;}
 
 
 
-    .containerGrid {  display: grid;
+    .contenedorGrid {  display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.2fr 3.1fr 0.3fr;
         gap: 20px 0px;
@@ -13,6 +13,7 @@ padding: 0;}
         "menuGrid"
         "mainGrid"
         "footerGrid";
+        align-content: space-between;
     }
   
     .logoGrid { grid-area: logoGrid; }
@@ -25,12 +26,18 @@ padding: 0;}
     .footerGrid { grid-area: footerGrid; 
         display: flex;
         flex-direction: column;    
+        margin-top: 20px;
+        position: relative;
+        justify-content: space-between;
     }
     .footerGrid p {
         align-self: center;
+
     }
   
-  .mainGrid { grid-area: mainGrid; }
+  .mainGrid { grid-area: mainGrid; 
+    margin-bottom: 34px;
+  }
 
 
 .intro {
@@ -55,7 +62,7 @@ header img {
 
 header{
     position: sticky;
-    top: 0%;
+    top: 0;
 }
 
 
@@ -99,10 +106,9 @@ body {
 #contenedor {
     min-height: 100%;
     padding: 20px;
-    margin: 20px 80px;
+    margin: 1.5% 4%;
     background-color: #ffffff;
     border-radius: 4px;
-    overflow-x:auto;
 }
 
 
@@ -166,6 +172,10 @@ footer img {
 
 /*armas*/
 
+#contenedor h3 {
+    padding: 10px;
+}
+
 #contenedor ul {
     margin-bottom: 15px;
 }
@@ -180,13 +190,79 @@ footer img {
     text-decoration: none;
 }
 
-#contenedor p {
-    margin-bottom: 15px;
+.contenedorArmas {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.separador {
+    width: 90%;
+    height: 2px;
+    size: 3;
+    background-color: rgb(66, 150, 228);
+    margin: 5%;
+}
+.subrayado {
+    width: 90%;
+    height: 2px;
+    size: 3;
+    background-color: rgb(66, 150, 228);
+    margin: 0% 5%;
+
+}
+.tituloarmas h3 {
+    font-size: 2em;
+    text-align: center;
+
+}
+.arma5 {
+    background-image: url('../Multimedia/fondoArma5.png');
+    background-size: cover;
+    width: 25%;
+}
+
+.armaTarjeta {
+    margin: 15px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(224, 209, 168);
+    display: flex;
+    flex-direction: row;
+    width: 425px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+}
+.tarjeta h4 {
+    margin: 5px;
+}
+.estiloarmas {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-flow: row wrap;
 }
 
 
-
 @media  screen and (max-width: 768px) {
+
+    .contenedorGrid {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.1fr 3.4fr 0.3fr;
+        gap: 20px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "logoGrid"
+        "menuGrid"
+        "mainGrid"
+        "footerGrid";
+        align-content: space-between;
+    }
+  
+
     .menu {
         display: flex;
         flex-direction: column;
@@ -232,6 +308,12 @@ footer img {
         width: 100%;
         text-align: center;
     }
+    .contenedorArmas {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    
 }
 
 @media screen and (min-width: 500px){

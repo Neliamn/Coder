@@ -8,7 +8,7 @@
     <link rel="icon" href="../Multimedia/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
-<body class="contenedor">
+<body>
     
     <div class="contenedorGrid">
         <div class="logoGrid">
@@ -34,41 +34,117 @@
             </ul>
         </nav>
        </header>
-       <main>
+       <main class="mainGrid">
         <div id="contenedor"> 
-            <h2>Armas</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero aliquam architecto animi unde? 
-            Voluptatibus, delectus repudiandae dicta nemo doloremque natus reiciendis temporibus nihil atque 
-            eveniet. Consequatur fugit libero commodi saepe?</p>
-            <h3>Tipos de armas</h3>
-            <ul>
-                <li><a href="#arcos">Arcos</a></li>
-                <li><a href="#catalizador">Catalizador</a></li>
-                <li><a href="#mandoble">Mandoble</a></li>
-                <li><a href="#espada">Espada</a></li>
-                <li><a href="#lanza">Lanza</a></li>
-            </ul>
-            <h3>Rareza</h3>
-            <p>Todas las armas tienen una rareza que va desde 1 estrella hasta 5 estrellas. 
-                Las armas con mayor rareza tienen un mayor crecimiento en sus estadísticas que las armas con menor rareza, pero son más difíciles de obtener.</p>
+            <div class="contenedorArmas">
+                <img src="../Multimedia/armas.jpg" alt="">
+                <div>
+                    <h2>Armas</h2>
+                    <p>Las armas en Genshin Impact son equipamientos que ayudan al jugador durante 
+                    sus misiones al infligir daño a los enemigos.</p>
+                    <h3>Tipos de armas</h3>
+                    <ul>
+                        <li><a href="#arcos">Arcos</a></li>
+                        <li><a href="#catalizador">Catalizador</a></li>
+                        <li><a href="#mandoble">Mandoble</a></li>
+                        <li><a href="#espada">Espada</a></li>
+                        <li><a href="#lanza">Lanza</a></li>
+                    </ul>
+                
+            
+                    <h3>Rareza</h3>
+                    <p>Todas las armas tienen una rareza que va desde 1 estrella hasta 5 estrellas. 
+                    Las armas con mayor rareza tienen un mayor crecimiento en sus estadísticas que las armas con menor rareza, pero son más difíciles de obtener.</p>
+                </div>
+            </div>
             <h3>Obtención</h3>
-            <p></p>
-            <div id="arcos">
-                <h3>Arcos</h3>
-            </div>
-            <div id="catalizador">
-                <h3>Catalizador</h3>
+            <ul>
+                <li>Armas de 5 estrellas: Sólo pueden obtenerse a través de Deseos.</li>
+                <li>Armas de 4 estrellas: Pueden obtenerse a través de Deseos y algunas pueden crearse a través de la Forja.</li>
+                <li>Armas de 3 estrellas, 2 estrellas y 1 estrella: Pueden ser dejadas como recompensa al derrotar a algunos jefes, u obtenerse de los cofres en el mundo abierto.</li>
+            </ul>
+            <hr class="separador">
+            <div class="tituloarmas"> 
+                <div class="estiloarmas" id="arcos">
+                    <h3>Arcos</h3>
+                    <hr class="subrayado">
+                    <div class="armaTarjeta">
+                        <img class="arma5" src="../Multimedia/Arcos/Agitador_del_Relampago.png" alt="">
+                        <div class="tarjeta">
+                            <h4>Agitador del Relámpago</h4>
+                            <ul>
+                                <li>Rareza: ⭐⭐⭐⭐⭐</li>
+                                <li>Stat básica: ATQ Base 46.0</li>
+                                <li>Stat secundaria: 14.4 Daño CRIT%</li>
+                                <li>Obtención: Gachapón</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="armaTarjeta">
+                        <img class="arma5" src="../Multimedia/Arcos/Alas_Celestiales.png" alt="">
+                        <div class="tarjeta">
+                            <h4>Alas Celestiales</h4>
+                            <ul>
+                                <li>Rareza: ⭐⭐⭐⭐⭐</li>
+                                <li>Stat básica: ATQ Base 48.0</li>
+                                <li>Stat secundaria: 4.8 Prob. CRIT%</li>
+                                <li>Obtención: Gachapón</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="armaTarjeta">
+                        <img class="arma5" src="../Multimedia/Arcos/Arco_de_Amos.png" alt="">
+                        <div class="tarjeta">
+                            <h4>Arco de Amos</h4>
+                            <ul>
+                                <li>Rareza: ⭐⭐⭐⭐⭐</li>
+                                <li>Stat básica: ATQ Base 46.0</li>
+                                <li>Stat secundaria: 10.8 ATQ%</li>
+                                <li>Obtención: Gachapón</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="armaTarjeta">
+                        <img class="arma5" src="../Multimedia/Arcos/Elegia_del_Fin.png" alt="">
+                        <div class="tarjeta">
+                            <h4>Elegía del Fin</h4>
+                            <ul>
+                                <li>Rareza: ⭐⭐⭐⭐⭐</li>
+                                <li>Stat básica: ATQ Base 46.0</li>
+                                <li>Stat secundaria: 12.0 Recarga de Energía% </li>
+                                <li>Obtención: Gachapón</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="armaTarjeta">
+                        <img class="arma5" src="../Multimedia/Arcos/Estrella_Invernal.png" alt="">
+                        <div class="tarjeta">
+                            <h4>Estrella Invernal</h4>
+                            <ul>
+                                <li>Rareza: ⭐⭐⭐⭐⭐</li>
+                                <li>Stat básica: ATQ Base 46.0</li>
+                                <li>Stat secundaria: 7.2 Prob. CRIT%</li>
+                                <li>Obtención: Gachapón</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+                <div class="estiloarmas" id="catalizador">
+                    <h3>Catalizador</h3>
 
-            </div>
-            <div id="mandoble">
-                <h3>Mandoble</h3>
-            </div>
-            <div id="espada">
-                <h3>Espada</h3>
-            </div>
-            <div id="lanza">
-                <h3>Lanza</h3>
-            </div>
+                </div>
+                <div class="estiloarmas" id="mandoble">
+                    <h3>Mandoble</h3>
+                </div>
+                <div class="estiloarmas" id="espada">
+                    <h3>Espada</h3>
+                </div>
+                <div class="estiloarmas" id="lanza">
+                    <h3>Lanza</h3>
+                </div>
+            </div> 
         </div>
        </main>
 
